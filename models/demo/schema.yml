@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: STAGE_CUSTOMER
+      description: "Loading customer staging table"
+      columns:
+          - name: C_CUSTKEY
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
